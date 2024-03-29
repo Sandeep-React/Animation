@@ -3,68 +3,32 @@ div{
     width: 100px;
     height: 100px;
     background-color: orange;
-    margin-left: 500px;
-    margin-top: 200px;
-
+    animation-name: rotatingandmovingbox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
-/* Default point of transform is center we can change the transform origin using transfom - origin */
-/* div:hover{
-    
-    transform-origin: top right;
-    transform: rotate(45deg);
 
-    transition-property: transform;
-    transition-duration: 2000ms;
+/* The animation i want to create is ===> the box shouldcover a distance of 500pxin x axis 
+simultaneosly it should keep rotating by 45 deg 
+This activity should happen infinite no of time
 
-} */
+If we want to create an animation we need to @keyframes
+*/
 
-/* Will move along right */
-/* div:hover{
-    transform: translateX(300px);
-    transition-property: transform;
-    transition-duration: 2s;
+@keyframes rotatingandmovingbox{
+    0%{
+        transform: translateX(0px) rotate(0deg);
+        
+    }
 
-} */
+    100%{
+        transform: translateX(500px) rotate(45deg);
+    }
+}
+/* Whenever we see percentage values in animation, we always refer the animation duration 
+3s == total time    
+0% == 0s
 
-/* Will move along left  */
-/* div:hover{
-    transform: translateX(-300px);
-    transition-property: transform;
-    transition-duration: 2s;
+100% == 3s
 
-} */
-/* Will move along down(300px) and up(-300px) */
-/* div:hover{
-    transform: translateY(300px);
-    transition-property: transform;
-    transition-duration: 2s;
-}*/
-
-    
-    /* Will move in both side */
-    /* div:hover{
-    transform: translate(300px, 400px);
-    transition-property: transform;
-    transition-duration: 2s;
-
-} */
-
-
-
-
-/* Changing the size */
-/* Changing the size along x axis */
-/* div:hover{ transform: scaleX(2);
-} */
-
-/* Changing the size along y axis */
-
-/* div:hover{
-    transform: scaleY(2);
-   } */
-
-   /* Changing the size along BOTH THE AXIS axis */
-
-   /* div:hover{
-    transform: scale(2, 2);
-   } */
+*/
