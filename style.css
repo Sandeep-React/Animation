@@ -1,38 +1,55 @@
+body{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 div{
-    border: 1px solid orange;
+    border: 1px solid red;
     width: 100px;
     height: 100px;
-    background-color: orange;
-    animation-name: rotatingandmovingbox;
-    animation-duration: 3s;
+    background-color: red;
+    position: relative;
+
+    transform: rotate(45deg);
+
+    animation-name: heartbeat;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
+    
 }
 
-/* The animation i want to create is ===> the box shouldcover a distance of 500pxin x axis 
-simultaneosly it should keep rotating by 45 deg 
-This activity should happen infinite no of time
+div::before{
+    content: "";
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100px;
+    position: absolute;
 
-If we want to create an animation we need to @keyframes
-*/
+    transform: translateY(-50px);
+}
 
-@keyframes rotatingandmovingbox{
+div::after{
+    content: "";
+    border: 1px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 100px;
+    position: absolute;
+    transform: translateX(-50px);
+}
+
+@keyframes heartbeat{
     0%{
-        transform: translateX(0px) translateY(0px) rotate(0deg);
-        
+        transform: scale(1) 
+        rotate(45deg);
     }
-    10%{
-        transform: translateY(200px) rotate(0deg);
-        
-    }
-
     100%{
-        transform: translateX(500px) rotate(45deg);
+        transform: scale(1.1) 
+        rotate(45deg);
     }
 }
-/* Whenever we see percentage values in animation, we always refer the animation duration 
-3s == total time    
-0% == 0s
-10% == 0.3s
-100% == 3s
-
-*/
