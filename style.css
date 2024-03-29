@@ -38,6 +38,33 @@ div{
     transform: translateY(300px);
     transition-property: transform;
     transition-duration: 2s;
+}*/
+
+    
+    /* Will move in both side */
+    /* div:hover{
+    transform: translate(300px, 400px);
+    transition-property: transform;
+    transition-duration: 2s;
 
 } */
 
+
+
+
+/* Changing the size */
+/* Changing the size along x axis */
+/* div:hover{ transform: scaleX(2);
+} */
+
+/* Changing the size along y axis */
+
+/* div:hover{
+    transform: scaleY(2);
+   } */
+
+   /* Changing the size along BOTH THE AXIS axis */
+
+   /* div:hover{
+    transform: scale(2, 2);
+   } */
