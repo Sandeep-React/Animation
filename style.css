@@ -20,7 +20,7 @@ If we want to create an animation we need to @keyframes
         transform: translateX(0px) translateY(0px) rotate(0deg);
         
     }
-    50%{
+    10%{
         transform: translateY(200px) rotate(0deg);
         
     }
@@ -32,7 +32,7 @@ If we want to create an animation we need to @keyframes
 /* Whenever we see percentage values in animation, we always refer the animation duration 
 3s == total time    
 0% == 0s
-50% == 1.5s
+10% == 0.3s
 100% == 3s
 
 */
