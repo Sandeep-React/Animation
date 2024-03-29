@@ -7,10 +7,37 @@ div{
     margin-top: 200px;
 
 }
-div:hover{
-    /* Default point of transform is center we can chage the transform origin using transfom - origin */
+/* Default point of transform is center we can change the transform origin using transfom - origin */
+/* div:hover{
+    
     transform-origin: top right;
     transform: rotate(45deg);
+
+    transition-property: transform;
     transition-duration: 2000ms;
 
-}
+} */
+
+/* Will move along right */
+/* div:hover{
+    transform: translateX(300px);
+    transition-property: transform;
+    transition-duration: 2s;
+
+} */
+
+/* Will move along left  */
+/* div:hover{
+    transform: translateX(-300px);
+    transition-property: transform;
+    transition-duration: 2s;
+
+} */
+/* Will move along down(300px) and up(-300px) */
+/* div:hover{
+    transform: translateY(300px);
+    transition-property: transform;
+    transition-duration: 2s;
+
+} */
+
