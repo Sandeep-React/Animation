@@ -1,0 +1,16 @@
+div{
+    border: 1px solid orange;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin-left: 500px;
+    margin-top: 200px;
+
+}
+div:hover{
+    /* Default point of transform is center we can chage the transform origin using transfom - origin */
+    transform-origin: top right;
+    transform: rotate(45deg);
+    transition-duration: 2000ms;
+
+}
